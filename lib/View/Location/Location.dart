@@ -68,93 +68,92 @@ class _LocationState extends State<Location> {
                     height: 30.h,
                   ),
                   Expanded(
-                      child: Container(
-                    width: double.infinity,
-                    child: Card(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(35.r),
-                          topLeft: Radius.circular(35.r),
+                    child: Container(
+                      width: double.infinity,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(35.r),
+                            topLeft: Radius.circular(35.r),
+                          ),
                         ),
-                      ),
-                      elevation: 3,
-                      child: Padding(
-                        padding:
-                            EdgeInsets.only(top: 20.h, left: 20.w, right: 20.w),
-                        child: Column(
-                          children: [
-                            Text(
-                              'Enable Location Services',
-                              style: TextStyle(
-                                  fontFamily: "Nuntio",
-                                  fontSize: 24.sp,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.black),
-                            ),
-                            CustomSizeBox(
-                              height: 20.h,
-                            ),
-                            Text(
-                              'Turn on location services so we can show you whats nearby',
-                              style: TextStyle(
-                                  fontFamily: "Nuntio",
-                                  fontSize: 16.sp,
-                                  fontWeight: FontWeight.w400,
-                                  color: Colors.black),
-                              textAlign: TextAlign.center,
-                            ),
-                            CustomSizeBox(
-                              height: 60.h,
-                            ),
-                            ElevatedButton(
-                              onPressed: () {},
-                              child: Text(
-                                'Allow Location Access',
+                        elevation: 3,
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 20.h, left: 20.w, right: 20.w),
+                          child: Column(
+                            children: [
+                              Text(
+                                'Enable Location Services',
                                 style: TextStyle(
-                                  fontFamily: "Nuntio",
-                                  fontSize: 16.sp,
-                                  fontWeight: FontWeight.w800,
-                                  color: Colors.white,
-                                ),
+                                    fontFamily: "Nuntio",
+                                    fontSize: 24.sp,
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.black),
                               ),
-                              style: ElevatedButton.styleFrom(
-                                  fixedSize: Size(300.w, 50.h),
-                                  backgroundColor: Color(0xff6F45F0),
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius:
-                                          BorderRadius.circular(32.r))),
-                            ),
-                            CustomSizeBox(
-                              height: 20.h,
-                            ),
-                            ElevatedButton(
-                              onPressed: () {
-                                Get.to(MapView());
-                              },
-
-
-                              child: Text(
-                                'Enter my Location',
+                              CustomSizeBox(
+                                height: 20.h,
+                              ),
+                              Text(
+                                'Turn on location services so we can show you whats nearby',
                                 style: TextStyle(
                                     fontFamily: "Nuntio",
                                     fontSize: 16.sp,
+                                    fontWeight: FontWeight.w400,
+                                    color: Colors.black),
+                                textAlign: TextAlign.center,
+                              ),
+                              CustomSizeBox(
+                                height: 60.h,
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  'Allow Location Access',
+                                  style: TextStyle(
+                                    fontFamily: "Nuntio",
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.w800,
-                                    color: Colors.grey),
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                    fixedSize: Size(300.w, 50.h),
+                                    backgroundColor: Color(0xff6F45F0),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(32.r))),
                               ),
-                              style: ElevatedButton.styleFrom(
-                                fixedSize: Size(300.w, 50.h),
-                                backgroundColor: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(32.r),
-                                    side: BorderSide(
-                                        width: 2.w, color: Colors.grey)),
+                              CustomSizeBox(
+                                height: 20.h,
                               ),
-                            ),
-                          ],
+                              ElevatedButton(
+                                onPressed: () {
+                                  Get.to(MapView());
+                                },
+                                child: Text(
+                                  'Enter my Location',
+                                  style: TextStyle(
+                                      fontFamily: "Nuntio",
+                                      fontSize: 16.sp,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.grey),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                  fixedSize: Size(300.w, 50.h),
+                                  backgroundColor: Colors.white,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(32.r),
+                                      side: BorderSide(
+                                          width: 2.w, color: Colors.grey)),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  )),
+                  ),
                 ],
               ),
             ),
